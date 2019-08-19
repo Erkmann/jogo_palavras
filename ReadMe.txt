@@ -1,0 +1,1 @@
+Executar apenas o arquivo 'index.py'!
