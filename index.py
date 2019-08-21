@@ -3,9 +3,11 @@ import random
 from pega_palavra import get_palavra
 from pergunta import pergunta_user
 from mensagens_falha import get_mensagem
+from seleciona_dificuldade import get_dificuldade
 
 
-palavra = get_palavra()
+dificuldade = get_dificuldade()
+palavra = get_palavra(int(dificuldade))
 
 palavra_embaralhada = "".join(random.sample(palavra, len(palavra)))
 
